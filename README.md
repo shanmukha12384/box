@@ -60,10 +60,15 @@ function draw() {
 }
 
 function keyPressed() {
- if (keyCode === DOWN_ARROW) {
-    // Look at the hints in the document and understand how to make the package body fall only on
-	Body.setStatic(packageBody, false);
+ 
+  if(keyDown("space")){
+	
+		Matter.Body.setStatic(packageBody, false);
 
-  }
+
+
+}
+
+}
 }
 
